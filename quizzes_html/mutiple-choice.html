@@ -10,7 +10,7 @@
         <meta property="og:type" content="website">
 
         <!-- Links -->
-        <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="/ProgFlash/styles/style.css">
 
         <title>Quiz Page</title>
     </head>
@@ -19,23 +19,25 @@
         <!-- quiz card -->
          <div class="quiz-card">
             <header class="quiz-header">
-                <h2> Quiz </h2>
+                <h2> Multiple-Choice Quiz </h2>
             </header>
 
             <div class="quiz-content">
                 <div class="quiz-question">
                     <h1> Question Example </h1>
-                    <img src="images/Quiz_example.png" alt="quiz_example">
+                    <img src="/ProgFlash/images/Quiz_example.png" alt="quiz_example">
                 </div>
 
                 <p class="quiz-result-correct">Correct!</p>
                 <p class="quiz-result-wrong">Wrong!</p>
 
                 <div class="quiz-options">
-                    <button class="option"> answer #1 </button>
+                    <!-- When question is incorrect, the class changes to option incorrect-->
+                    <button class="option incorrect"> answer #1 (Incorrect Answer Ex.) </button>
                     <button class="option"> answer #2 </button>
                     <button class="option"> answer #3 </button>
-                    <button class="option correct"> answer #4 (correct answer ex.) </button>
+                    <!-- When answer is correct, the class changes to option correct-->
+                    <button class="option correct"> answer #4 (Correct Answer Ex.) </button>
                 </div>
             </div>
          </div>
