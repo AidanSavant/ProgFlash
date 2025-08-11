@@ -1,2 +1,2 @@
 # ProgFlash
-A web application designed to flashcard you on previous programming languages learned here at Neumont.
+A web application used to quiz and challenge you on various programming languages, programming language semantics and syntax, computer science topics, design principles, etc, with a priority of instant feedback, responsiveness, and growth. Initially, there will only be support for the programming languages we've (the developers) have learned in previous classes, most of which are still relatively new to us.
