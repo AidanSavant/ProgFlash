@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(45deg, #f0f2f5 0%, #e8ecf0 50%, #f0f2f5 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-bg {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+        radial-gradient(circle at 25% 25%, rgba(255,255,255,0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    animation: float 8s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: rotate(0deg) translate(0px, 0px); }
+    33% { transform: rotate(120deg) translate(10px, -10px); }
+    66% { transform: rotate(240deg) translate(-10px, 10px); }
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    opacity: 0.95;
+    position: relative;
+    z-index: 1;
+}
+
+/* Main Content */
+main {
+    padding: 3rem 0;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Quiz Subjects Grid */
+.quiz-subjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.subject-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.subject-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #667eea, transparent);
+    transition: left 0.6s ease;
+}
+
+.subject-card:hover::before {
+    left: 100%;
+}
+
+.subject-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.2);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.card-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.subject-card:hover .card-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.subject-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #667eea;
+    font-weight: 600;
+}
+
+.subject-card p {
+    color: #666;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.start-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2.5rem;
+    }
+    
+    .subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .intro h2 {
+        font-size: 1.7rem;
+    }
+    
+    .quiz-subjects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .subject-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .card-icon {
+        font-size: 2.5rem;
+    }
+    
+    header {
+        padding: 3rem 0;
+    }
+    
+    main {
+        padding: 2rem 0;
+    }
+    
+    .start-btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+}
