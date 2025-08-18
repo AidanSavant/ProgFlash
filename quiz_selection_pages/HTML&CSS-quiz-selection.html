@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CodeQuiz - Select </title>
+        <link rel="stylesheet" href="/ProgFlash/styles/quiz-selection.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="header-bg"></div>
+                <h1 class="logo">CodeQuiz</h1>
+                <p class="subtitle">Select the quiz you want to take</p>
+            </header>
+
+            <!-- Menu Bar -->
+            <nav class="menu-bar">
+                <div class="container">
+                    <ul class="menu-list">
+                        <a class="home" href="/ProgFlash/HomePage.html">🏠︎</a>
+                        <li class="dropdown">
+                            <a href="#" class="menu-link">Subjects ▼</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/ProgFlash/quiz_selection_pages/JS-quiz-selection.html" class="dropdown-link">💻 JavaScript</a></li>
+                                <li><a href="/ProgFlash/quiz_selection_pages/Python-quiz-selection.html" class="dropdown-link">🐍 Python</a></li>
+                                <li><a href="/ProgFlash/quiz_selection_pages/HTML&CSS-quiz-selection.html" class="dropdown-link">🎨 HTML & CSS</a></li>
+                                <li><a href="/ProgFlash/quiz_selection_pages/React-quiz-selection.html" class="dropdown-link">⚛️ React</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main>
+                <section class="intro">
+                    <h2>Choose a Quiz to Get Started</h2>
+                    <p>Select a category from below and select a quiz to take and challenge yourself</p>
+                </section>
+
+                <section class="quiz-selection">
+                    <!-- Where the dropdown menus are going to be stored -->
+                    <div class="subject-bar">
+                        <div class="subject-info">
+                            <span class="icon">💻</span>
+                            <h3>Intro to HTML</h3>
+                        </div>
+                        <span>▼</span>
+                    </div>
+                    <ul class="quiz-dropdown">
+                        <!-- This is where the quizzes are going to be referenced-->
+                         <!-- The reference is an example-->
+                        <li><a href="/ProgFlash/quizzes_html/mutiple-choice.html">HTML Basics</a></li>
+                        <li><a href="">Basic HTML Architecture</a></li>
+                    </ul>
+
+                    <div class="subject-bar">
+                        <div class="subject-info">
+                            <span class="icon">🎨</span>
+                            <h3>Intro to CSS</h3>
+                        </div>
+                        <span>▼</span>
+                    </div>
+                    <ul class="quiz-dropdown">
+                        <li><a href="">CSS Basics</a></li>
+                        <li><a href="">CSS interacting with HTML</a></li>
+                    </ul>
+
+                </section>
+            </main>
+
+            <footer>
+                <p>&copy; 2025 ProgFlash</p>
+            </footer>
+        </div>
+
+        
+    </body>
+    <script>
+        // A small script to toggle dropdowns
+        document.querySelectorAll('.subject-bar').forEach(bar => {
+            bar.addEventListener('click', () => {
+                bar.classList.toggle('active');
+            });
+        });
+    </script>
+</html>
