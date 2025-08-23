@@ -10,22 +10,28 @@
         <meta property="og:type" content="website">
 
         <!-- Links -->
-        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/quiz.css">
 
         <title>Quiz Page</title>
     </head>
 
     <body>
+
+
         <!-- quiz card -->
          <div class="quiz-card">
+            <!-- Settings Button -->
+            <button class="settings_btn" id="settings_btn"> ⚙️ </button>
+
+
             <header class="quiz-header">
                 <h2> Multiple-Choice Quiz </h2>
             </header>
 
             <div class="quiz-content">
                 <div class="quiz-question">
-                    <h1> Question Example </h1>
-                    <img src="/images/Quiz_example.png" alt="quiz_example">
+                    <h2> Question #1 </h2>
+                    <p> What is 1 + 1 </p>
                 </div>
 
                 <p class="quiz-result-correct">Correct!</p>
@@ -41,9 +47,14 @@
                 </div>
             </div>
 
-            <!-- Confirmation Button (Should show up after selecting an option)-->
+            <!-- Next Button-->
+            <button class="next_btn" id="next_btn"> Next </button>
+
+            <!-- Submit Button (Will replace the "Next Button" to exit, for now its commented out)-->
             <button class="submit_btn" id="submit_btn"> Submit </button>
 
+            <!-- A previous Button to go to the previous question (You can make this disappear if you want)-->
+            <button class="prev_btn" id="prev-btn"> Previous </button>
          </div>
     </body>
 </html>
