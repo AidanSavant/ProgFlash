@@ -10,7 +10,7 @@
         <meta property="og:type" content="website">
 
         <!-- Links -->
-        <link rel="stylesheet" href="/frontend/styles/quiz.css">
+        <link rel="stylesheet" href="/styles/quiz.css">
 
         <title>Quiz Page</title>
     </head>
@@ -20,9 +20,6 @@
 
         <!-- quiz card -->
          <div class="quiz-card">
-            <!-- Home Button -->
-            <a href="/frontend/quiz_selection_pages/Java-quiz-selection.html"><button class="home_btn" id="home_btn">🏠︎</button></a>
-
             <!-- Settings Button -->
             <button class="settings_btn" id="settings_btn"> ⚙️ </button>
 
@@ -37,13 +34,16 @@
                     <p> What is 1 + 1 </p>
                 </div>
 
+                <p class="quiz-result-correct">Correct!</p>
+                <p class="quiz-result-wrong">Wrong!</p>
+
                 <div class="quiz-options">
                     <!-- When question is incorrect, the class changes to option incorrect-->
-                    <button class="option"> answer #1 </button>
+                    <button class="option incorrect"> answer #1 (Incorrect Answer Ex.) </button>
                     <button class="option"> answer #2 </button>
                     <button class="option"> answer #3 </button>
                     <!-- When answer is correct, the class changes to option correct-->
-                    <button class="option"> answer #4 </button>
+                    <button class="option correct"> answer #4 (Correct Answer Ex.) </button>
                 </div>
             </div>
 
