@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CodeQuiz - Select </title>
-        <link rel="stylesheet" href="/styles/quiz-selection.css">
+        <link rel="stylesheet" href="/frontend/styles/quiz-selection.css">
     </head>
     <body>
         <div class="container">
@@ -18,14 +18,14 @@
             <nav class="menu-bar">
                 <div class="container">
                     <ul class="menu-list">
-                        <a class="home" href="/index.html">🏠︎</a>
+                        <a class="home" href="/frontend/index.html">🏠︎</a>
                         <li class="dropdown">
                             <a href="#" class="menu-link">Subjects ▼</a>
                             <ul class="dropdown-menu">
-                                <li><a href="/quiz_selection_pages/JS-quiz-selection.html" class="dropdown-link">💻 JavaScript</a></li>
-                                <li><a href="/quiz_selection_pages/Python-quiz-selection.html" class="dropdown-link">🐍 Python</a></li>
-                                <li><a href="/quiz_selection_pages/HTML&CSS-quiz-selection.html" class="dropdown-link">🎨 HTML & CSS</a></li>
-                                <li><a href="/quiz_selection_pages/React-quiz-selection.html" class="dropdown-link">⚛️ React</a></li>
+                                <li><a href="/frontend/quiz_selection_pages/JS-quiz-selection.html" class="dropdown-link">💻 JavaScript</a></li>
+                                <li><a href="/frontend/quiz_selection_pages/Python-quiz-selection.html" class="dropdown-link">🐍 Python</a></li>
+                                <li><a href="/frontend/quiz_selection_pages/HTML&CSS-quiz-selection.html" class="dropdown-link">🎨 HTML & CSS</a></li>
+                                <li><a href="/frontend/quiz_selection_pages/Java-quiz-selection.html" class="dropdown-link">⚛️ Java</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -35,36 +35,46 @@
 
             <main>
                 <section class="intro">
-                    <h2>Choose a Quiz to Get Started</h2>
+                    <h2>Choose a JavaScript Quiz to Get Started</h2>
                     <p>Select a category from below and select a quiz to take and challenge yourself</p>
                 </section>
 
                 <section class="quiz-selection">
                     <!-- Where the dropdown menus are going to be stored -->
+                    <!-- Easy -->
                     <div class="subject-bar">
                         <div class="subject-info">
-                            <span class="icon">💻</span>
-                            <h3>Intro to HTML</h3>
+                            <span class="icon">🟩</span>
+                            <h3>Easy</h3>
                         </div>
                         <span>▼</span>
                     </div>
                     <ul class="quiz-dropdown">
-                        <!-- This is where the quizzes are going to be referenced-->
-                         <!-- The reference is an example-->
-                        <li><a href="/quizzes_html/HTML_quizzes/HTML-multiple-choice.html">HTML Basics</a></li>
-                        <li><a href="/quizzes_html/HTML_quizzes/HTML-written.html">Basic HTML Architecture</a></li>
+                        <li><a href="/frontend/quizzes_html/JS_quizzes/JS-mutiple-choice.html">JS Variables & Types</a></li>
                     </ul>
 
+                    <!-- Medium -->
                     <div class="subject-bar">
                         <div class="subject-info">
-                            <span class="icon">🎨</span>
-                            <h3>Intro to CSS</h3>
+                            <span class="icon">🟨</span>
+                            <h3>Medium</h3>
                         </div>
                         <span>▼</span>
                     </div>
                     <ul class="quiz-dropdown">
-                        <li><a href="/quizzes_html/CSS_quizzes/CSS-multiple-choice.html">CSS Basics</a></li>
-                        <li><a href="/quizzes_html/CSS_quizzes/CSS-written.html">CSS interacting with HTML</a></li>
+                        <li><a href="/frontend/quizzes_html/JS_quizzes/JS-mutiple-choice.html">Type Coercion & Strict Equality</a></li>
+                    </ul>
+
+                    <!-- Hard -->
+                    <div class="subject-bar">
+                        <div class="subject-info">
+                            <span class="icon">🟥</span>
+                            <h3>Hard</h3>
+                        </div>
+                        <span>▼</span>
+                    </div>
+                    <ul class="quiz-dropdown">
+                        <li><a href="/frontend/quizzes_html/JS_quizzes/JS-mutiple-choice.html">JS Scope & Strict Mode</a></li>
                     </ul>
 
                 </section>
