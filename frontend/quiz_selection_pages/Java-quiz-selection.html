@@ -42,41 +42,31 @@
                 <section class="quiz-selection">
                     <!-- Where the dropdown menus are going to be stored -->
                     <!-- Easy -->
-                    <div class="subject-bar">
+                    <a href="/frontend/quizzes_html/Java_quizzes/Java-multiple-choice.html" class="subject-bar">
                         <div class="subject-info">
                             <span class="icon">🟩</span>
                             <h3>Easy</h3>
                         </div>
-                        <span>▼</span>
-                    </div>
-                    <ul class="quiz-dropdown">
-                        <li><a href="/frontend/quizzes_html/Java_quizzes/Java-multiple-choice.html">Java Common Variables & Defaults</a></li>
-                    </ul>
+                        <span>▶</span>
+                    </a>
 
                     <!-- Medium -->
-                    <div class="subject-bar">
+                    <a href="/frontend/quizzes_html/Java_quizzes/Java-multiple-choice.html" class="subject-bar">
                         <div class="subject-info">
                             <span class="icon">🟨</span>
                             <h3>Medium</h3>
                         </div>
-                        <span>▼</span>
-                    </div>
-                    <ul class="quiz-dropdown">
-                        <li><a href="/frontend/quizzes_html/Java_quizzes/Java-multiple-choice.html">Java Access & Object Comparison</a></li>
-                    </ul>
+                        <span>▶</span>
+                    </a>
 
                     <!-- Hard -->
-                    <div class="subject-bar">
+                    <a href="/frontend/quizzes_html/Java_quizzes/Java-multiple-choice.html" class="subject-bar">
                         <div class="subject-info">
                             <span class="icon">🟥</span>
                             <h3>Hard</h3>
                         </div>
-                        <span>▼</span>
-                    </div>
-                    <ul class="quiz-dropdown">
-                        <li><a href="/frontend/quizzes_html/Java_quizzes/Java-multiple-choice.html">Java OOP - Polymorphism</a></li>
-                    </ul>
-
+                        <span>▶</span>
+                    </a>
                 </section>
             </main>
 
@@ -87,12 +77,4 @@
 
         
     </body>
-    <script>
-        // A small script to toggle dropdowns
-        document.querySelectorAll('.subject-bar').forEach(bar => {
-            bar.addEventListener('click', () => {
-                bar.classList.toggle('active');
-            });
-        });
-    </script>
 </html>
