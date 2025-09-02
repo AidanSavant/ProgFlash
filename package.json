@@ -1,0 +1,15 @@
+{
+  "name": "progflash",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "openai": "^5.16.0",
+    "path": "^0.12.7",
+    "url": "^0.11.4"
+  }
+}

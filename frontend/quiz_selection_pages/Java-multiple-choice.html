@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An assignment in creating a quiz game, this is the Front-End">
+
+        <!-- The OG section for social media channels. -->
+        <meta property="og:title" content="An assignment in creating a quiz game, this is the Front-End">
+        <meta property="og:type" content="website">
+
+        <!-- Links -->
+        <link rel="stylesheet" href="/styles/quiz.css">
+        <title>Java Quiz Page</title>
+    </head>
+
+    <body>
+
+
+        <!-- quiz card -->
+         <div class="quiz-card">
+            <!-- Home Button -->
+            <a href="/index.html"><button class="home-btn" id="home-btn">🏠︎</button></a>
+
+            <!-- Settings Button -->
+            <button class="settings-btn" id="settings-btn"> ⚙️ </button>
+
+            <header class="quiz-header">
+                <h2> Java Multiple-Choice Quiz </h2>
+            </header>
+
+            <div class="quiz-content">
+                <div class="quiz-question">
+                    <h2 id="question-num"> Question 1/10 </h2>
+                    <p id="question-text"> Question here </p>
+                </div>
+
+                <div class="quiz-options">
+                    <button class="option"> answer #1 </button>
+                    <button class="option"> answer #2 </button>
+                    <button class="option"> answer #3 </button>
+                    <button class="option"> answer #4 </button>
+                </div>
+            </div>
+
+            <!-- Next Button-->
+            <button class="next-btn" id="next-btn"> Next </button>
+
+            <!-- A previous Button to go to the previous question (You can make this disappear if you want)-->
+            <button class="prev-btn" id="prev-btn"> Previous </button>
+         </div>
+    </body>
+    <script src="/quiz.js"></script>
+</html>
