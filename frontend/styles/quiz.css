@@ -167,7 +167,7 @@ body {
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
-.next-btn:hover, .submit_btn:hover ,.prev_btn:hover, .settings_btn:hover, .home_btn:hover,.option:hover {
+.next-btn:hover, .submit-btn:hover ,.prev-btn:hover, .settings-btn:hover, .home-btn:hover,.option:hover {
     transform: translateY(-4px);
     box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
 }
